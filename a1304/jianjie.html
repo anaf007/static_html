@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0; list-style:none; font-family:'微软雅黑'; text-decoration:none;}
+img{ border:none;}
+
+#top{ width:1000px; margin:0 auto; overflow:hidden; margin-bottom:20px;}
+#logo{ float:left;width:364px; height:100px;}
+#logo img{ width:364px; height:100px;}
+#top_nav{ float:right; margin-top:30px;}
+#top_nav li{ float:left; margin:0 10px; position:relative;}
+#top_nav a{ color:#a8adb3; font-size:16px;}
+#top_nav a:hover{ text-decoration:underline;}
+
+#nav_box{ width:100%; height:53px; background-color:#d1043f; border-top:1px solid #d56b7f;}
+#nav{ width:1000px; margin:0 auto;}
+#nav li{ float:left;}
+.zhuan{-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	 -o-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out;
+}
+.index:hover .zhuan{
+	-webkit-transform: rotate(180deg); 
+	-moz-transform: rotate(180deg);
+	 -o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+}
+.index .one{ font-size:16px; color:#fff; padding:16px 20px; display:block;}
+.index:hover .one{ background-color:#b20638;}
+.index:hover #nav_two{ display:block;}
+
+#nav_two{ background-color:#f6f6f6; border:1px solid #cacaca; display:none; border-top:none; position:absolute; z-index:1;}
+#nav_two dd{ background-color:#f6f6f6; width:120px;}
+#nav_two a{ font-size:14px; color:#555; padding:6px 0; padding-left:20px; display:block;}
+#nav_two a:hover{ color:#fff; background-color:#d1043f;}
+
+
+/*banner部分*/
+.banner_box{ width:100%; background-image:url(images/banner_background_10.png); height:380px;}
+.banner{ height:380px; overflow:inherit; position:relative; width:960px; background-color:#fff; margin:0 auto;}
+.banner img{ display:none;}
+
+#btn_left{ background-image:url(images/btn_13.png); width:40px; height:71px; background-position:left top; z-index:2; position:absolute; top:50%; margin-top:-35px; left:-60px; cursor:pointer;}
+#btn_right{ background-image:url(images/btn_13.png); width:40px; height:71px; background-position:right top; z-index:2; position:absolute; top:50%; margin-top:-35px; right:-60px; cursor:pointer;}
+.thumbnail{ position:absolute; overflow:hidden; width:960px; left:0; bottom:0; cursor:pointer;}
+.thumbnail li{ background-image:url(images/banner_background_03.png);  width:320px;}
+.thumbnail_li{ float:left;  font-size:20px; color:#fff; text-align:center; padding:20px 0;}
+.dangqian{ background-color:#fff; color:#000;}
+
+#box{ width:958px; margin:10px auto; overflow:hidden; margin-top:24px;}
+#box_title{ font-size:20px; color:#d10741; padding-bottom:10px; border-bottom:2px solid #c3c3c3;}
+#content{ }
+#content h3{ font-size:19px; color:#393939; margin-top:20px; margin-bottom:12px;}
+#content b{ font-size:12px; color:#5b5b5b;}
+#content b span{ color:#aeaeae;}
+#img_txt{ margin-top:54px;}
+#img_txt img{ margin-bottom:30px; margin:0 auto; display:block;}
+#img_txt pre{ margin-top:20px; text-indent:2em; white-space: pre-wrap;word-wrap: break-word; line-height:30px; color:#333;}
+
+
+
+#tail_box{ width:100%; border-top:1px solid #cecece; background-color:#f8f8f8;}
+#tail{ width:960px; margin:0 auto; overflow:hidden; border-bottom:1px solid #ececec; margin-bottom:20px;}
+#link{ float:left; width:240px; margin-top:30px;}
+#link li{ margin-bottom:10px;}
+#link a{ font-size:15px; color:#648bb4;}
+#link a:hover{ color:#cc0000;} 
+
+#bottom{ text-align:center; font-size:12px; color:#6b6b6b; padding-bottom:10px;}
+
+</style>
+<script src="js/jquery.js"></script>
+</head>
+
+<body>
+
+<div id="top">
+	<div id="logo">
+    	<img src="images/1_02.png" />
+    </div>
+    <ul id="top_nav">
+    	<li><a href="">首页</a></li>
+        <li><a>|</a></li>
+        <li><a href="">首页</a></li>
+        <li><a>|</a></li>
+        <li><a href="">首页</a></li>
+    </ul>
+</div>
+
+<div id="nav_box">
+	<ul id="nav">
+        <li class="index">
+            <a class="one" href="index.html">首页</a>
+        </li>
+        
+        
+        <li class="index">
+            <a class="one" href="jianjie.html">企业简介
+                <img class="zhuan" src="images/sanjiao_06.png" />
+            </a>
+            <dl id="nav_two">
+                <dd><a href="jianjie.html">企业文化</a></dd>
+                <dd><a href="jianjie.html">关于我们</a></dd>
+            </dl>
+        </li>
+        
+        <li class="index">
+            <a class="one" href="cpnews.html">新闻动态
+                <img class="zhuan" src="images/sanjiao_06.png" />
+            </a>
+            <dl id="nav_two">
+                <dd><a href="cpnews.html">公司新闻</a></dd>
+                <dd><a href="news.html">行业新闻</a></dd>
+            </dl>
+        </li>
+        
+        <li class="index">
+            <a class="one" href="goods.html">产品列表
+                
+            </a>
+        </li>
+        
+        <li class="index">
+            <a class="one" href="#">联系我们
+                
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="banner_box">
+	<div class="banner">
+    	<div>
+            <img src="images/banner4.png" />
+            <img src="images/banner2.png" />
+            <img src="images/banner3.png" />
+    	</div>
+        <a id="btn_left"></a>
+        <a id="btn_right"></a>
+        
+        <ul class="thumbnail">
+        	<li class="thumbnail_li">内容待定</li>
+            <li class="thumbnail_li">内容待定</li>
+            <li class="thumbnail_li">内容待定</li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="box">
+	  <div id="box_title">企业动态</div>
+      <div id="content">
+      	<h3>维C很重要，怎样“吃”更有效</h3>
+        <b>日期：<span>1/7/2015</span></b>
+        <div id="img_txt">
+        	<img src="images/ad_03.png" />
+            <pre>维生素C的作用概要： 1、合成Collagen（胶原蛋白）-以形成软骨、骨质、牙釉质及血管上皮的重要基质。 2、促进脯胺酸转变为氢脯胺酸之反应，而氢脯胺酸为构成胶原重要成分之一，因此维生素C可促进胶原之生成。 3、维持结缔组织之正常-因为胶原是构成结缔组织之细胞间质。 4、参加体内氧化还原反应-维生素C可参加酪胺酸及某些物质的氧化反应。 5、制造肾上腺类固醇激素。 6、增进伤口愈合及增加对受伤及感染等压力的感受力。 7、在受感染、发热时，此维生素之损失亦随之增加，故其对刺激之反应扮演重要角色。 8、解毒作用； 9、改善心肌功能，减低毛细血管脆性，增加机体抵抗力； 10、对抗游离基，有助于防癌，降低胆固醇，防止坏血病。     富含维生素C的食物有： 柑橘类水果和番茄是维生素C的最佳来源，清椒、菠菜、马铃薯中含量亦丰，维生素C的合成片剂。</pre>
+        </div>
+      </div>
+</div>
+
+
+
+<div id="tail_box">
+	<div id="tail">
+    	<ul id="link">
+        	<li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+        </ul>
+        <ul id="link">
+        	<li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+        </ul>
+        <ul id="link">
+        	<li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+        </ul>
+        <ul id="link">
+        	<li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+        </ul>
+    </div>
+    
+    <p id="bottom">创达锐有限公司所有未经许可不得转载或者链接，备案号:GX-45678132465</p>
+</div>
+
+
+<script>
+$(".banner img").hide();
+$(".banner img:first").show();
+$(".thumbnail li").removeClass("dangqian")
+$(".thumbnail li").eq(0).addClass("dangqian")
+$(".thumbnail li").eq(0).addClass("thumbnail_xuan")
+var n = 0;
+function imgChange(){
+	if(n<$(".banner img").length-1){
+		n=n+1;
+		}else{
+		n=0;	
+		}
+	     
+    $(".banner img").hide();
+    $(".banner img:eq("+n+")").fadeIn(444);
+	$(".thumbnail li").removeClass("dangqian")
+		$(".thumbnail li").eq(n).addClass("dangqian")
+		$(".thumbnail li").eq(n).addClass("thumbnail_xuan")
+	}
+
+var clock = setInterval(imgChange,3000);
+$(".banner").mouseover(function(){
+	clearInterval(clock);
+		}).mouseout(function(){
+		clock=setInterval(imgChange,3000)	
+		})
+
+	
+	$("#btn_left").click(function(){
+		if(n>0){
+			n=n-1;
+			}else{
+			n=$(".banner img").length-1;	
+		}
+		$(".banner img").hide();
+		$(".banner img").eq(n).fadeIn(444);
+		$(".thumbnail li").removeClass("dangqian")
+		$(".thumbnail li").eq(n).addClass("dangqian")		
+	})
+	
+	$("#btn_right").click(function(){
+		if(n<$(".banner img").length-1){
+			n=n+1;
+			}else{
+			n=0;	
+		}
+		$(".banner img").hide();
+		$(".banner img").eq(n).fadeIn(444);
+		$(".thumbnail li").removeClass("dangqian")
+		$(".thumbnail li").eq(n).addClass("dangqian")		
+	})
+	
+	$(".thumbnail li").click(function(){
+		n=$(".thumbnail li").index(this)
+		$(".banner img").hide();
+		$(".banner img").eq(n).fadeIn(444);
+		$(".thumbnail li").removeClass("dangqian")
+		$(".thumbnail li").eq(n).addClass("dangqian")
+	})
+</script>
+</body>
+</html>

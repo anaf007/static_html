@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0; list-style:none; font-family:'微软雅黑'; text-decoration:none;}
+img{ border:none;}
+
+#top{ width:1000px; margin:0 auto; overflow:hidden; margin-bottom:20px;}
+#logo{ float:left;width:364px; height:100px;}
+#logo img{ width:364px; height:100px;}
+#top_nav{ float:right; margin-top:30px;}
+#top_nav li{ float:left; margin:0 10px; position:relative;}
+#top_nav a{ color:#a8adb3; font-size:16px;}
+#top_nav a:hover{ text-decoration:underline;}
+
+#nav_box{ width:100%; height:53px; background-color:#d1043f; border-top:1px solid #d56b7f;}
+#nav{ width:1000px; margin:0 auto;}
+#nav li{ float:left;}
+.zhuan{-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	 -o-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out;
+}
+.index:hover .zhuan{
+	-webkit-transform: rotate(180deg); 
+	-moz-transform: rotate(180deg);
+	 -o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+}
+.index .one{ font-size:16px; color:#fff; padding:16px 20px; display:block;}
+.index:hover .one{ background-color:#b20638;}
+.index:hover #nav_two{ display:block;}
+
+#nav_two{ background-color:#f6f6f6; border:1px solid #cacaca; display:none; border-top:none; position:absolute; z-index:1;}
+#nav_two dd{ background-color:#f6f6f6; width:120px;}
+#nav_two a{ font-size:14px; color:#555; padding:6px 0; padding-left:20px; display:block;}
+#nav_two a:hover{ color:#fff; background-color:#d1043f;}
+
+
+/*banner部分*/
+.banner_box{ width:100%; background-image:url(images/banner_background_10.png); height:380px;}
+.banner{ height:380px; overflow:inherit; position:relative; width:960px; background-color:#fff; margin:0 auto;}
+.banner img{ display:none;}
+
+#btn_left{ background-image:url(images/btn_13.png); width:40px; height:71px; background-position:left top; z-index:2; position:absolute; top:50%; margin-top:-35px; left:-60px; cursor:pointer;}
+#btn_right{ background-image:url(images/btn_13.png); width:40px; height:71px; background-position:right top; z-index:2; position:absolute; top:50%; margin-top:-35px; right:-60px; cursor:pointer;}
+.thumbnail{ position:absolute; overflow:hidden; width:960px; left:0; bottom:0; cursor:pointer;}
+.thumbnail li{ background-image:url(images/banner_background_03.png);  width:320px;}
+.thumbnail_li{ float:left;  font-size:20px; color:#fff; text-align:center; padding:20px 0;}
+.dangqian{ background-color:#fff; color:#000;}
+
+#box{ width:958px; border:1px solid #cfcfcf; margin:10px auto; overflow:hidden; margin-top:24px;}
+#box h3{ color:#616161; font-size:20px; text-align:center; padding:20px 0;}
+#box pre{ width:950px; margin:0 auto;white-space: pre-wrap;word-wrap: break-word; text-indent:2em; line-height:20px; margin-bottom:10px;}
+
+#tail_box{ width:100%; border-top:1px solid #cecece; background-color:#f8f8f8;}
+#tail{ width:960px; margin:0 auto; overflow:hidden; border-bottom:1px solid #ececec; margin-bottom:20px;}
+#link{ float:left; width:240px; margin-top:30px;}
+#link li{ margin-bottom:10px;}
+#link a{ font-size:15px; color:#648bb4;}
+#link a:hover{ color:#cc0000;} 
+
+#bottom{ text-align:center; font-size:12px; color:#6b6b6b; padding-bottom:10px;}
+
+</style>
+<script src="js/jquery.js"></script>
+</head>
+
+<body>
+
+<div id="top">
+	<div id="logo">
+    	<img src="images/1_02.png" />
+    </div>
+    <ul id="top_nav">
+    	<li><a href="">首页</a></li>
+        <li><a>|</a></li>
+        <li><a href="">首页</a></li>
+        <li><a>|</a></li>
+        <li><a href="">首页</a></li>
+    </ul>
+</div>
+
+<div id="nav_box">
+	<ul id="nav">
+        <li class="index">
+            <a class="one" href="index.html">首页</a>
+        </li>
+        
+        
+        <li class="index">
+            <a class="one" href="jianjie.html">企业简介
+                <img class="zhuan" src="images/sanjiao_06.png" />
+            </a>
+            <dl id="nav_two">
+                <dd><a href="jianjie.html">企业文化</a></dd>
+                <dd><a href="jianjie.html">关于我们</a></dd>
+            </dl>
+        </li>
+        
+        <li class="index">
+            <a class="one" href="cpnews.html">新闻动态
+                <img class="zhuan" src="images/sanjiao_06.png" />
+            </a>
+            <dl id="nav_two">
+                <dd><a href="cpnews.html">公司新闻</a></dd>
+                <dd><a href="news.html">行业新闻</a></dd>
+            </dl>
+        </li>
+        
+        <li class="index">
+            <a class="one" href="goods.html">产品列表
+                
+            </a>
+        </li>
+        
+        <li class="index">
+            <a class="one" href="#">联系我们
+                
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="banner_box">
+	<div class="banner">
+    	<div>
+            <img src="images/banner4.png" />
+            <img src="images/banner2.png" />
+            <img src="images/banner3.png" />
+    	</div>
+        <a id="btn_left"></a>
+        <a id="btn_right"></a>
+        
+        <ul class="thumbnail">
+        	<li class="thumbnail_li">内容待定</li>
+            <li class="thumbnail_li">内容待定</li>
+            <li class="thumbnail_li">内容待定</li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="box">
+	<h3>传奇，往往从平凡起步</h3>
+    <pre>很久以前，在波斯国的某城市里住着兄弟俩，哥哥叫戈西母，弟弟叫阿里巴巴.父亲去世后，他俩各自分得了有限的一点财产，分家自立，各谋生路.不久银财便花光了，生活日益艰难.为了解决吃穿，糊口度日，兄弟俩不得不日夜奔波，吃苦耐劳.
+
+    后来戈西母幸运地与一个富商的女儿结了婚，他继承了岳父的产业，开始走上做生意的道路.由于生意兴隆，发展迅速，戈西母很快就成为远近闻名的大富商了.
+
+    阿里巴巴娶了一个穷苦人家的女儿，夫妻俩过着贫苦的生活.全部家当除了一间破屋外，就只有三匹毛驴.阿里巴巴靠卖柴禾为生，每天赶着毛驴去丛林中砍柴，再驮到集市去卖，以此维持生活.
+
+    有一天，阿里巴巴赶着三匹毛驴，上山砍柴.他将砍下的枯树和干木柴收集起来，捆绑成驮子，让毛驴驮着.砍好柴准备下山的时候，远处突然出现一股烟尘，弥漫着直向上空飞扬，朝他这儿卷过来，而且越来越近.靠近以后，他才看清原来是一支马队，正急速向这个方向冲来.
+
+    阿里巴巴心里害怕，因为若是碰到一伙歹徒，那么毛驴会被抢走，而且自身也性命难保.他心里充满恐惧，想拔脚逃跑，但是由于那帮人马越来越近，要想逃出森林，已是不可能的了，他只得把驮着柴禾的毛驴赶到丛林的小道里，自己爬到一棵大树上躲避起来.
+
+    那棵大树生长在一个巨大险峭的石头旁边.他把身体藏在茂密的枝叶间，从上面可以看清楚下面的一切，而下面的人却看不见他.
+
+    这时候，那帮人马已经跑到那棵树旁，勒马停步，在大石头前站定.他们共有四十人，一个个年轻力壮，行动敏捷.阿里巴巴仔细打量，看起来，这是一伙拦路抢劫的强盗，显然是刚刚抢劫了满载货物的商队，到这里来分赃的，或者准备将抢来之物隐藏起来.
+
+    阿里巴巴心里这样想着，决心探个究竟.
+
+    匪徒们在树下拴好马，取下沉甸甸的鞍袋，里面显然装着金银珠宝.
+
+    这时，一个首领模样的人背负沉重的鞍袋，从丛林中一直来到那个大石头跟前，喃喃地说道：“芝麻，开门吧！”随着那个头目的喊声，大石头前突然出现一道宽阔的门路，于是强盗们鱼贯而入.那个首领走在最后.
+
+    首领刚进入洞内，那道大门便自动关上了.</pre>    
+</div>
+
+
+
+<div id="tail_box">
+	<div id="tail">
+    	<ul id="link">
+        	<li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+        </ul>
+        <ul id="link">
+        	<li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+        </ul>
+        <ul id="link">
+        	<li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+        </ul>
+        <ul id="link">
+        	<li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+        </ul>
+    </div>
+    
+    <p id="bottom">创达锐有限公司所有未经许可不得转载或者链接，备案号:GX-45678132465</p>
+</div>
+
+
+<script>
+$(".banner img").hide();
+$(".banner img:first").show();
+$(".thumbnail li").removeClass("dangqian")
+$(".thumbnail li").eq(0).addClass("dangqian")
+$(".thumbnail li").eq(0).addClass("thumbnail_xuan")
+var n = 0;
+function imgChange(){
+	if(n<$(".banner img").length-1){
+		n=n+1;
+		}else{
+		n=0;	
+		}
+	     
+    $(".banner img").hide();
+    $(".banner img:eq("+n+")").fadeIn(444);
+	$(".thumbnail li").removeClass("dangqian")
+		$(".thumbnail li").eq(n).addClass("dangqian")
+		$(".thumbnail li").eq(n).addClass("thumbnail_xuan")
+	}
+
+var clock = setInterval(imgChange,3000);
+$(".banner").mouseover(function(){
+	clearInterval(clock);
+		}).mouseout(function(){
+		clock=setInterval(imgChange,3000)	
+		})
+
+	
+	$("#btn_left").click(function(){
+		if(n>0){
+			n=n-1;
+			}else{
+			n=$(".banner img").length-1;	
+		}
+		$(".banner img").hide();
+		$(".banner img").eq(n).fadeIn(444);
+		$(".thumbnail li").removeClass("dangqian")
+		$(".thumbnail li").eq(n).addClass("dangqian")		
+	})
+	
+	$("#btn_right").click(function(){
+		if(n<$(".banner img").length-1){
+			n=n+1;
+			}else{
+			n=0;	
+		}
+		$(".banner img").hide();
+		$(".banner img").eq(n).fadeIn(444);
+		$(".thumbnail li").removeClass("dangqian")
+		$(".thumbnail li").eq(n).addClass("dangqian")		
+	})
+	
+	$(".thumbnail li").click(function(){
+		n=$(".thumbnail li").index(this)
+		$(".banner img").hide();
+		$(".banner img").eq(n).fadeIn(444);
+		$(".thumbnail li").removeClass("dangqian")
+		$(".thumbnail li").eq(n).addClass("dangqian")
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0px;}
+a{ text-decoration:none;}
+img{ border:none;}
+li{ list-style:none;}
+body{ min-width:980px; background-color:#efefef;}
+/*index*//**//**/
+/*头部*/
+.headBox{ background-color:#161619; border-bottom:2px solid #7c1a15; padding:10px 0; position:fixed; width:100%;}
+.head{ width:980px; margin:0 auto; height:60px;}
+.logo{ width:190px; height:60px; float:left;}
+.navBox{ float:right; margin-top:29px;}
+.nav{ float:left; position:relative;}
+.n{padding:12px 30px; font-size:18px; color:#fafafa; font-family:"微软雅黑";}
+.n:hover{border-bottom:5px solid #878787;}
+.second{ position:absolute; top:40px; display:none; background-color:#161619; width:120px; text-align:center;border-bottom:2px solid #7c1a15; z-index:888;}
+.second dd{ padding:12px 0; font-size:14px; color:#fafafa;}
+.second dd:hover{ background-color:#e1e1e1; color:#161619; font-weight:bold;}
+.nav:hover .second{ display:block;}
+
+.banner{width:100%;}
+.banner img{ display:block; width:100%;}
+.banner_1{ background-image:url(../images/ico_01_07.png); height:108px;}
+.join{ width:980px; margin:0 auto; overflow:hidden; padding-top:30px;}
+.jo_1{ float:left; font-size:18px; font-family:'微软雅黑'; color:#6b6b6b;}
+.jo_2{ float:right; }
+.jo_2 button{font-size:16px; color:#222933;border:1px solid #c8c8c8; border-radius:4px; padding:10px 30px; margin-right:10px; cursor:pointer;}
+/*内容*/
+.content{ width:980px; margin:25px auto; border-bottom:1px solid #c2c7c8; padding-bottom:30px;}
+.title{ font-size:18px; color:#121213; font-family:'微软雅黑'; margin-bottom:10px;}
+.title span{ font-size:14px; color:#666666; margin-left:10px;}
+.serve{ overflow:hidden;}
+.serve_1{ float:left; margin:0 40px; width:246px;}
+.serve_1 img{ width:246px; height:193px;}
+.serve_1 b{ font-size:14px; color:#454545; line-height:30px;}
+.serve_1 p{ font-size:12px; color:#6a6a6a; line-height:22px;}
+
+.content_1{ width:980px; height:250px; margin:0 auto; overflow:hidden; position:relative;}
+.rollBox{ position:absolute; overflow:hidden; margin-top:10px;  width:888888px;}
+.roll{ float:left; width:228px; margin:0 8px; text-align:center; font-size:14px; color:#6d6d6d;}
+.roll:hover img{ width:232px; height:138px;}
+.roll img{ width:228px; height:134px; margin-bottom:10px;}
+/*底部*/
+.stern{ background-color:#131313; padding-top:30px; padding-bottom:15px;}
+.sternBox{ width:980px; margin:0 auto; overflow:hidden;}
+.st_1{ float:left; width:280px;}
+.caption{ font-size:16px; font-family:'微软雅黑'; color:#8b8b8b; padding-bottom:6px; border-bottom:1px solid #373737;}
+.abstract{ overflow:hidden; margin-top:10px;}
+.abstract a{ float:left; font-size:12px; color:#8b8b8b;}
+.abstract span{ float:right; font-size:12px; color:#606060;}
+.st_2{ float:left; width:280px; margin-left:70px;}
+.st_3{ float:right; width:280px;}
+.copyright{ margin:0 auto; width:980px; font-size:12px; color:#c0c0c0; margin-top:50px;}
+
+
+/*about*//**//**/
+.banner_2{width:100%;}
+.banner_2 img{ display:block; width:100%;}
+.shade{ background-image:url(../images/ico_02_02.png); height:34px;}
+.navBox_1{ width:980px; margin:0 auto; text-align:center;}
+.nn{ font-size:16px; color:#272727; padding:10px 30px; border-bottom:3px solid #c7c7c7; cursor:pointer; font-family:'微软雅黑';}
+.navBox_1T{ border-bottom:3px solid #f27835; color:#f27835; font-weight:bold;}
+
+.switchover{ width:980px; margin:80px auto;}
+.sw_1{ overflow:hidden; border-bottom:1px solid #dfdfdf; padding-bottom:50px;}
+.sw_1 p{font-size:14px; color:#6d6d6d; line-height:30px; padding-top:30px;}
+.sw_1 img{float:right; margin-left:40px; width:310px; height:268px;}
+.sw_2{ overflow:hidden; margin-top:20px;}
+.s_1{float:left;}
+.s_1 img{ width:420px; height:400px; margin-left:30px; margin-right:90px;}
+.s_2{float:left; border-left:1px dotted #acacac; padding:0 20px; width:390px;}
+.s_2 div{ font-size:16px; color:#5a5a5a; border-bottom:1px solid #ef6c24; padding-bottom:10px; margin-bottom:10px; font-family:'微软雅黑';}
+.s_2 p{ font-size:14px; color:#696969; line-height:30px;}
+
+
+/*example*//**//**/
+.example{ width:1002px; margin:60px auto;}
+.ex_1{overflow:visible; }
+.ex_1 img{ width:303px; height:164px; margin:11px;}
+.page{ margin-top:50px; text-align:center; font-size:14px; color:#2a2a2a;}
+.page button{ border:1px solid #c1c1c1; font-size:14px; color:#2a2a2a; padding:2px 5px; cursor:pointer; margin:10px;}
+
+
+/*service*//**//**/
+.service{ width:1004px; margin:10px auto; overflow:hidden;}
+.se_1{ float:left; width:295px; margin:20px 12px;}
+.se_1 a{ background-image:url(../images/ico_05.png); width:295px; height:134px; display:block; margin-bottom:6px;}
+.se_1 a b{ font-size:18px; color:#343434; margin-left:25px; line-height:100px;}
+.se_1 p{ font-size:12px; color:#333333; line-height:22px;}
+.service_1{ font-size:18px; font-family:'微软雅黑'; color:#494949; width:980px; margin:0 auto;}
+.service_1 span{ margin-left:10px; font-size:14px; color:#b4b4b4;}
+
+.flow{ width:980px; overflow:hidden; margin:25px auto;}
+.flow li{float:left; width:200px; margin:0 20px;}
+.flow img{ width:200px; height:156px;}
+.flow b{ font-size:22px; color:#7c7c7c; line-height:30px;}
+.flow p{ font-size:14px; color:#494949; line-height:22px;}
+
+
+
+
+
+
+
+
+
+

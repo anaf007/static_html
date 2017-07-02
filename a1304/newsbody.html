@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新闻详情</title>
+<style>
+*{ margin:0; padding:0; list-style:none; font-family:'微软雅黑'; text-decoration:none;}
+img{ border:none;}
+
+#top{ width:1000px; margin:0 auto; overflow:hidden; margin-bottom:20px;}
+#logo{ float:left;width:364px; height:100px;}
+#logo img{ width:364px; height:100px;}
+#top_nav{ float:right; margin-top:30px;}
+#top_nav li{ float:left; margin:0 10px; position:relative;}
+#top_nav a{ color:#a8adb3; font-size:16px;}
+#top_nav a:hover{ text-decoration:underline;}
+
+#nav_box{ width:100%; height:53px; background-color:#d1043f; border-top:1px solid #d56b7f;}
+#nav{ width:1000px; margin:0 auto;}
+#nav li{ float:left;}
+.zhuan{-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	 -o-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out;
+}
+.index:hover .zhuan{
+	-webkit-transform: rotate(180deg); 
+	-moz-transform: rotate(180deg);
+	 -o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+}
+.index .one{ font-size:16px; color:#fff; padding:16px 20px; display:block;}
+.index:hover .one{ background-color:#b20638;}
+.index:hover #nav_two{ display:block;}
+
+#nav_two{ background-color:#f6f6f6; border:1px solid #cacaca; display:none; border-top:none; position:absolute; z-index:1;}
+#nav_two dd{ background-color:#f6f6f6; width:120px;}
+#nav_two a{ font-size:14px; color:#555; padding:6px 0; padding-left:20px; display:block;}
+#nav_two a:hover{ color:#fff; background-color:#d1043f;}
+
+
+/*banner部分*/
+.banner_box{ width:100%; background-image:url(images/banner_background_10.png); height:380px;}
+.banner{ height:380px; overflow:inherit; position:relative; width:960px; background-color:#fff; margin:0 auto;}
+.banner img{ display:none;}
+
+#btn_left{ background-image:url(images/btn_13.png); width:40px; height:71px; background-position:left top; z-index:2; position:absolute; top:50%; margin-top:-35px; left:-60px; cursor:pointer;}
+#btn_right{ background-image:url(images/btn_13.png); width:40px; height:71px; background-position:right top; z-index:2; position:absolute; top:50%; margin-top:-35px; right:-60px; cursor:pointer;}
+.thumbnail{ position:absolute; overflow:hidden; width:960px; left:0; bottom:0; cursor:pointer;}
+.thumbnail li{ background-image:url(images/banner_background_03.png);  width:320px;}
+.thumbnail_li{ float:left;  font-size:20px; color:#fff; text-align:center; padding:20px 0;}
+.dangqian{ background-color:#fff; color:#000;}
+
+#box{ width:960px; margin:10px auto; overflow:hidden; margin-top:24px;}
+#box_title{ position:relative; border-bottom:1px solid #cbcbcb; overflow:hidden; float:left; width:960px;}
+#box_title h3{ color:#427018; font-size:22px; padding-bottom:8px;}
+#box_title p{ position:absolute; top:10px; right:0; font-size:15px; color:#ff6c12; font-size:15px; padding:6px 6px; border:1px solid #cacaca; border-radius:8px;}
+
+#left{ width:360px; float:left;}
+#weizhi{ font-size:12px; color:#656565; margin:20px 0;}
+#goods{ width:360px; height:250px;}
+#goods img{ width:360px; height:250px;}
+#btn{ width:116px; height:31px; margin:20px auto; display:block; border-radius:14px; border:1px solid #dfdfdf; background-color:#fff; color:#2e2e2e;}
+#xinxi{ border-top:1px solid #959595; font-size:12px;  padding-top:20px;}
+#xinxi li{ overflow:hidden; margin-bottom:10px;}
+#xinxi p{ color:#383838; float:left; padding-right:4px;}
+#xinxi span{ color:#636363; float:left; padding-right:14px;}
+
+
+
+#right{ width:570px; float:right;}
+#right pre{ width:570px; line-height:30px; white-space:pre-wrap; word-wrap:break-word; font-size:12px; color:#343434;}
+
+
+
+#tail_box{ width:100%; border-top:1px solid #cecece; background-color:#f8f8f8;}
+#tail{ width:960px; margin:0 auto; overflow:hidden; border-bottom:1px solid #ececec; margin-bottom:20px;}
+#link{ float:left; width:240px; margin-top:30px;}
+#link li{ margin-bottom:10px;}
+#link a{ font-size:15px; color:#648bb4;}
+#link a:hover{ color:#cc0000;} 
+
+#bottom{ text-align:center; font-size:12px; color:#6b6b6b; padding-bottom:10px;}
+
+</style>
+<script src="js/jquery.js"></script>
+</head>
+
+<body>
+
+<div id="top">
+	<div id="logo">
+    	<img src="images/1_02.png" />
+    </div>
+    <ul id="top_nav">
+    	<li><a href="">首页</a></li>
+        <li><a>|</a></li>
+        <li><a href="">首页</a></li>
+        <li><a>|</a></li>
+        <li><a href="">首页</a></li>
+    </ul>
+</div>
+
+<div id="nav_box">
+	<ul id="nav">
+        <li class="index">
+            <a class="one" href="index.html">首页</a>
+        </li>
+        
+        
+        <li class="index">
+            <a class="one" href="jianjie.html">企业简介
+                <img class="zhuan" src="images/sanjiao_06.png" />
+            </a>
+            <dl id="nav_two">
+                <dd><a href="jianjie.html">企业文化</a></dd>
+                <dd><a href="jianjie.html">关于我们</a></dd>
+            </dl>
+        </li>
+        
+        <li class="index">
+            <a class="one" href="cpnews.html">新闻动态
+                <img class="zhuan" src="images/sanjiao_06.png" />
+            </a>
+            <dl id="nav_two">
+                <dd><a href="cpnews.html">公司新闻</a></dd>
+                <dd><a href="news.html">行业新闻</a></dd>
+            </dl>
+        </li>
+        
+        <li class="index">
+            <a class="one" href="goods.html">产品列表
+                
+            </a>
+        </li>
+        
+        <li class="index">
+            <a class="one" href="#">联系我们
+                
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="banner_box">
+	<div class="banner">
+    	<div>
+            <img src="images/banner4.png" />
+            <img src="images/banner2.png" />
+            <img src="images/banner3.png" />
+    	</div>
+        <a id="btn_left"></a>
+        <a id="btn_right"></a>
+        
+        <ul class="thumbnail">
+        	<li class="thumbnail_li">内容待定</li>
+            <li class="thumbnail_li">内容待定</li>
+            <li class="thumbnail_li">内容待定</li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="box">
+	<div id="box_title">
+    	<h3>多种植物蛋白粉（770克）</h3>
+        <p>产品介绍</p>
+    </div>
+    
+    <div id="left">
+    	<p id="weizhi">营养保健食品 > <span>功能性保健系列</span></p>
+        <div id="goods">
+        	<img src="images/2_03.png" />
+    	</div>
+        <input id="btn" type="button" value="如何购买" />
+        
+        <ul id="xinxi">
+        	<li><p>净含量：</p><span>770克</span><p>定&nbsp;&nbsp;&nbsp;价：</p><span>¥560</span></li>
+            <li><p>编&nbsp;&nbsp;&nbsp;号：</p><span>65498</span></li>
+        </ul>
+        
+    </div>
+    
+    <div id="right">
+    	<pre>食用方法及食用量：每日1次，每次10克。可加入牛奶、果汁及谷物、蔬菜等食品中食用
+贮藏方法：保持罐盖封闭，贮存于24℃以下阴凉干燥处。请放置于儿童触及不到的地方。
+注意事项：本品不能替代药物。
+生产企业:安利(中国)日用品有限公司
+产品标准号：Q/(KQ)ACCI219
+卫生许可证号：国食健字G20120130
+●源自天然的健康营养
+萃取自大豆、小麦、豌豆的蛋白精华、品质纯正，天然补养，有效缓解体力疲劳，提升免疫力。
+● 优化氨基酸配比
+蛋白质消化率校正氨基酸计分PDCASS为1，蛋白质吸收率高达100%每天一勺，贴心呵护健康。
+● 富含卵磷脂、易容解、口感幼滑
+具抗氧化及乳化作用，使蛋白质粉更易被人体消化和吸收，且有助于蛋白质混合，溶解得更快更好
+● 致力更好的健康活力
+提供高品质蛋氨酸，并改变味道，有利于人体吸收
+● 冠军品质、值得信赖
+专利技术、包装设计、全新突破、人性化的体贴细节
+致力更好的使用体验、品质保证、值得信赖
+全新升级多种植物蛋白粉----致力更好的健康品质
+● 大豆蛋白----“绿色牛奶”天然补养更安心
+大豆蛋白是植物蛋白质中非常好的蛋白来源，属于完全蛋白质，富含全部人体的必须氨基酸，且含量充足，组分齐全，是品质极佳的优蛋白，是一种绿色安全、保健食品。</pre>
+    </div>
+    
+</div>
+
+
+
+<div id="tail_box">
+	<div id="tail">
+    	<ul id="link">
+        	<li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+        </ul>
+        <ul id="link">
+        	<li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+        </ul>
+        <ul id="link">
+        	<li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+        </ul>
+        <ul id="link">
+        	<li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+            <li><a href="">待定内容</a></li>
+        </ul>
+    </div>
+    
+    <p id="bottom">创达锐有限公司所有未经许可不得转载或者链接，备案号:GX-45678132465</p>
+</div>
+
+
+<script>
+$(".banner img").hide();
+$(".banner img:first").show();
+$(".thumbnail li").removeClass("dangqian")
+$(".thumbnail li").eq(0).addClass("dangqian")
+$(".thumbnail li").eq(0).addClass("thumbnail_xuan")
+var n = 0;
+function imgChange(){
+	if(n<$(".banner img").length-1){
+		n=n+1;
+		}else{
+		n=0;	
+		}
+	     
+    $(".banner img").hide();
+    $(".banner img:eq("+n+")").fadeIn(444);
+	$(".thumbnail li").removeClass("dangqian")
+		$(".thumbnail li").eq(n).addClass("dangqian")
+		$(".thumbnail li").eq(n).addClass("thumbnail_xuan")
+	}
+
+var clock = setInterval(imgChange,3000);
+$(".banner").mouseover(function(){
+	clearInterval(clock);
+		}).mouseout(function(){
+		clock=setInterval(imgChange,3000)	
+		})
+
+	
+	$("#btn_left").click(function(){
+		if(n>0){
+			n=n-1;
+			}else{
+			n=$(".banner img").length-1;	
+		}
+		$(".banner img").hide();
+		$(".banner img").eq(n).fadeIn(444);
+		$(".thumbnail li").removeClass("dangqian")
+		$(".thumbnail li").eq(n).addClass("dangqian")		
+	})
+	
+	$("#btn_right").click(function(){
+		if(n<$(".banner img").length-1){
+			n=n+1;
+			}else{
+			n=0;	
+		}
+		$(".banner img").hide();
+		$(".banner img").eq(n).fadeIn(444);
+		$(".thumbnail li").removeClass("dangqian")
+		$(".thumbnail li").eq(n).addClass("dangqian")		
+	})
+	
+	$(".thumbnail li").click(function(){
+		n=$(".thumbnail li").index(this)
+		$(".banner img").hide();
+		$(".banner img").eq(n).fadeIn(444);
+		$(".thumbnail li").removeClass("dangqian")
+		$(".thumbnail li").eq(n).addClass("dangqian")
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ background-image:url(../images/1_10.png)}
+body,p,ul,li,a,span,dd,dr,h5,h3{ list-style:none; margin:0; padding:0; text-decoration:none;}
+img{ border:none;}
+#topBox{ width:1280px; margin:0 auto; overflow:hidden; margin-top:10px;}
+#topBox ul{ width:440px; float:right;}
+#topBox li{ float:left; color:#bbbbbc; margin-right:10px; font-size:12px;}
+#topBox p{ padding-top:6px;}
+#topBox p:hover{ color:#fff;}
+
+/*导航*/
+#navBox{ background-image:url(../images/2_16.png); height:87px; width:1280px; margin:0 auto; margin-top:10px; overflow:inherit;}
+#logo{ float:left; margin:12px 30px;}
+.nav{ float:right; width:720px; margin-top:20px;}
+.nav li:hover{ background-image:url(../images/2_21.png);}
+.nav b{ float:left; padding-top:20px;}
+.nav li{ float:left; width:97px; text-align:center; padding-top:20px; color:#333; cursor:pointer;}
+.nav p{ font-size:14px;}
+.nav span{ font-size:12px; color:#78650d;}
+.nav li:hover{ color:#fff;}
+
+/*二级导航*/
+#tow_nav{ color:#FFF;}
+#tow_nav h5{ padding:4px 0; font-weight:normal; font-size:12px; margin:4px 0;}
+#tow_nav dd:hover{ color:#0195d3; background-color:#FFF; }
+
+
+/*单一样式*/
+.white{ color:#fff; font-size:18px;}
+#wiite{ color:#fff;}
+
+/*banner轮播*/
+.banner_box{ width:100%; height:250px; margin:0 auto; overflow:hidden; position:absolute; left:50%; margin-left:-640px; top:116px; z-index:-1;}
+
+/*button*/
+.button{ z-index:9999; overflow:hidden; width:200px; position:absolute; left:600px; bottom:30px;}
+.button li{ float:left; background-image:url(../images/3_03.png); margin-right:14px; width:16px; height:16px;}
+.button_hover{ background-image:url(../images/3_05.png);}
+
+
+/*ad大框架*/
+#ad_id{ width:1280px; background-color:#efefef; margin:0 auto; overflow:hidden; margin-top:230px;}
+#centent{ background-image:url(../images/5_06.png); width:230px;}
+#centent ul{ padding-bottom:10px; margin-left:11px; }
+#centent li{ padding-left:100px;width:110px;  padding-bottom:6px; padding-top:6px; font-size:14px; color:#fff; text-align:right;}
+#centent li:hover{ background-color:#AAE0F2; color:#000;}
+#centent p{ padding-right:8px;}
+
+#ad_box{ float:left; margin-left:140px; padding-bottom:30px;}
+#neirong img{ width:267px; height:245px;}
+#ad_2{ margin-bottom:20px;}
+#ad_3{ margin:13px; float:left; width:840px;}
+#bt{ padding-bottom:1px; border-bottom:1px solid #ccc; overflow:hidden;}
+#bt h3{ width:90px; font-size:18px; border-bottom:3px solid #2685ad; float:left;}
+#bt ul{ float:right; width:190px;}
+#bt li{ float:left; font-size:12px; padding:4px 3px;}
+#blue_back{ background-color:#2685ad; color:#fff;}
+
+#imgbox{ margin-top:8px; width:840px; overflow:hidden; padding-bottom:30px; padding-top:30px;}
+#imgbox #one{ float:left; width:230px; margin:0 25px;}
+#imgbox img{ width:225px; height:220px; padding:4px; border:1px solid #ccc;}
+#imgbox img:hover{ border:1px solid #cc0000;}
+#imgbox p{ text-align:center; padding-top:10px; font-size:12px; color:#777777;}
+#imgbox p:hover{ color:#cc0000;}
+
+
+/*页码*/
+.yema{ overflow:hidden; width:340px; margin:0 auto;}
+.yema li{ float:left; margin-right:4px; font-size:12px; color:#777777; background-color:#fff; cursor:pointer;}
+.yema p{ padding:4px;}
+.yema p:hover{ background-color:#0195dc; color:#fff;}
+
+
+
+/*尾部信息*/
+#tail_box{ width:1280px; height:190px; background-image:url(../images/8_10.png); margin:0 auto; margin-bottom:30px; overflow:hidden;}
+#tail_1{ float:left; margin-top:24px; margin-left:340px;}
+#tail_1 p{ font-size:18px; font-weight:bold; color:#fff;}
+#tail_1 span{ font-size:18px; font-weight:bold; color:#999999; padding-top:20px; display:block;}
+#QQ{ margin-top:10px;}
+
+#tail_2{ margin-top:24px; margin-left:200px; float:left;}
+#tail_2 p{ font-size:18px; color:#999999; padding:10px 0;}

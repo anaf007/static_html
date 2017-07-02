@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(function(){
+	$(".subMenu").hide();
+	$(".menu-1").hover(function(){
+		n=$(".menu-1").index(this);
+		$(".subMenu").eq(n).show();
+		},function(){
+		$(".subMenu").hide();	
+			})
+})
+
+</script>
+
+<style>
+/*重置*/
+*{ margin:0; padding:0;}
+li{ list-style:none;}
+img{ border:none;}
+a{ text-decoration:none;}
+body{ background-color:#2b2c2c;}
+/*顶栏*/
+.topBox{ width:1240px; height:450px; background-image: url(images/ico_1_01_03_03.png); margin:0 auto;}
+/*导航*/
+.roof{height:17px; background-image:url(images/ico_2_02.png);}
+/*导航*/
+.nav{
+	width:1240px;
+	height:52px;
+	background-image:url(images/ico_2_04.png);
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+.first{
+	float:left;
+	width:88px;
+	height:52px;
+	color:#FFF;
+	margin-left:30px;
+}
+.first:hover{ background-color:#d04d46;}
+.first a{ color:#FFF;}
+.first{ text-align:center;}
+.menu{
+	float:left;
+	width:88px;
+	height:52px;
+}
+.menu:hover{ background-color:#d04d46;}
+.menu-1{position:relative;}
+.menu-1{ text-align:center; }
+.title{
+	line-height:52px;
+	font-size:12px;
+	font-family:"微软雅黑";
+}
+.title:hover{ background-color:#d04d46;}
+.menu a{ color:#ffffff;}
+.subMenu{
+	background-image:url(images/ioc_5_03.png);
+	width:126px;
+	position:absolute;
+	top:52px;
+	left:0;
+}
+.btn{display:block;padding:10px;background-color:red;color:white;cursor:pointer;position:absolute;right:0;top:0;}
+.subMenu dd{
+	display:block;
+	height:36px;
+	background-image: url(images/ico_3_03.png);
+	line-height:32px;
+	text-align:center;
+	font-size:12px;
+	font-family:'微软雅黑';
+}
+.subMenu dd:hover{
+	background-image: url(images/ico_3_03_03.png);
+}
+.subMenu a{color:#FFF;}
+.title img{ margin-left:4px;}
+.logo{ float:left; margin-left:171px;}
+.enter{ width:87px; height:24px; border-radius:4px; background-color:#d04d46; float:left; text-align:center; line-height:22px; margin-left:70px; margin-top:15px;}
+.enter:hover{ background-color:#cd372f;}
+.enter a{font-family:'微软雅黑'; font-size:12px; color:#FFF;}
+.floatBox{ width:598px; height:120px; background-image:url(images/ico_4_03.png); margin-top:156px; margin-left:130px; padding-top:46px;}
+.floatBox a{color:#FFF; font-family:Arial, Helvetica, sans-serif; font-size:30px; margin-left:26px;}
+.floatBox p{color:#FFF; font-family:'微软雅黑'; font-size:30px; margin-left:26px;}}
+
+/*内容*/
+.neck{ width:1240px; height:50px; margin:0 auto;}
+.neckImg{ float:left;margin-top:10px; margin-left:790px;}
+.button{ width:164px; height:25px;background-image:url(images/ico_6_05.png); float:left; margin-top:10px; margin-left:10px; padding-top:5px;}
+.button a{ font-size:14px; font-family:'微软雅黑'; margin-left:40px; color:#FFF;}
+.content{ width:1240px; margin:0 auto; margin-top:50px;}
+.box-1{ height:48px; margin:0 auto; background-image:url(images/ico_7_02.png);}
+.box-2{ margin:0 auto; background-image:url(images/ico_7_03.png); overflow:hidden;}
+.box-3{ height:31px; margin:0 auto; background-image:url(images/ico_7_04.png);}
+
+.cBox{ width:1000px; margin:0 auto;}
+.cBox ul{ margin-top:22px;}
+.place { font-family:'微软雅黑'; font-size:14px; color:#696969;}
+.place a{ font-family:'微软雅黑';color:#696969;}
+.place img{ margin:0 4px;}
+.details{ width:176px; color:#747474; font-size:12px; font-family:'微软雅黑'; text-align:center; line-height:20px; float:left; margin:0 37px; margin-bottom:20px;}
+.imgBox{ width:174px; height:184px; border:1px solid #dfdfdf;}
+.button-1{ background-image:url(images/ico_11_03_03_03.png); width:74px; height:23px; margin-left:52px;}
+.button-1:hover{ background-image:url(images/ico_11_03_03_03_03.png);}
+.button-1 a{ color: #FFF; font-family:'微软雅黑'; line-height:0px;}
+
+
+
+/*底部*/
+.buttom{ width:1040px; margin:0 auto; margin-top:18px; overflow:hidden; padding-bottom:20px;}
+.site li{ color:#FFF; font-size:12px; font-family:'微软雅黑'; line-height:29px; margin-left:48px;}
+.site img{ margin-right:13px;}
+.site,.store{ float:left; color:#FFF; font-size:12px; font-family:'微软雅黑';}
+.store-1{ width:117px; height:24px; background-image:url(images/ico_11_03.png); margin-top:20px;}
+.store-1 a{ float:left; color:#FFF; font-size:12px; font-family:'微软雅黑'; line-height:22px; margin-left:20px;}
+.store{ margin-left:270px;}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>健康产品</title>
+</head>
+
+<body>
+
+<!--顶栏-->
+<div class="topBox">
+    <!--导航-->
+    <div class="roof"></div>
+      <div class="nav">
+        <div class="logo"><img src="images/logo_03.png"></div>
+        <div class="first">
+            <div class="first-1"><a class="title" href="index.html">首页</a></div>
+         </div>
+        <div class="menu">
+             <div class="menu-1"><a class="title" href="index.html">走进亚通<img src="images/ico_3_03_03_03.png"></a>
+                 <dl class="subMenu">
+                     <a href="jingying.html"><dd>经营理念</dd></a>
+                     <a href="wenhua.html"><dd>企业文化</dd></a>
+                     <a href="jijin.html"><dd>公益基金</dd></a>
+                     <a href="shili.html"><dd>科研实力</dd></a>
+
+                  </dl>
+              </div>
+         </div>
+        <div class="menu">
+             
+              <div class="menu-1"><a class="title" href="shangcheng.html">亚通商城</a>
+              <dl class="subMenu"></dl>\
+
+              </div>
+         </div>
+        
+
+        <div class="menu">
+             
+              <div class="menu-1"><a class="title" href="jiankang.html">健康产品</a>
+              <dl class="subMenu"></dl>\
+              
+              </div>
+         </div>
+        <div class="menu">
+             
+              <div class="menu-1"><a class="title" href="about_me.html">联系我们</a>
+              <dl class="subMenu"></dl>\
+              
+              </div>
+         </div>
+        <div class="menu">
+             <div class="menu-1"><a class="title" href="news.html">新闻动态</a></div>
+         </div><div class="enter"><a href="">会员登录</a></div>
+  </div>
+	<div class="floatBox">
+    	<a>Creating Healthier Lives with Yatong</a>
+        <p>走进亚通，创造更健康的生活。</p>
+    </div>
+</div>
+<!--内容-->
+<div class="neck">
+	<div class="neckImg"><img src="images/ico_6_03_03.png"></div>
+    <div class="button"><a href="">进入亚通商城</a></div>
+</div>
+
+<div class="content">
+	<div class="box-1">
+    </div>
+	<div class="box-2">
+    	<div class="cBox">
+            <div class="place">当前位置：<a href="">首页</a><img src="images/ico_06_03.png">健康产品</div>
+            <ul>
+                <li class="details">
+                	<div class="imgBox"><img src="images/ico_11_03_03.png"></div>
+                	<div>智能家用榨油机</div>
+                    <div class="button-1"><a href="">查看详情</a></div>
+                </li>
+                <li class="details">
+                	<div class="imgBox"><img src="images/ico_11_03_03.png"></div>
+                	<div>智能家用榨油机</div>
+                    <div class="button-1"><a href="">查看详情</a></div>
+                </li>
+                <li class="details">
+                	<div class="imgBox"><img src="images/ico_11_03_03.png"></div>
+                	<div>智能家用榨油机</div>
+                    <div class="button-1"><a href="">查看详情</a></div>
+                </li>
+                <li class="details">
+                	<div class="imgBox"><img src="images/ico_11_03_03.png"></div>
+                	<div>智能家用榨油机</div>
+                    <div class="button-1"><a href="">查看详情</a></div>
+                </li>
+                <li class="details">
+                	<div class="imgBox"><img src="images/ico_11_03_03.png"></div>
+                	<div>智能家用榨油机</div>
+                    <div class="button-1"><a href="">查看详情</a></div>
+                </li>
+                <li class="details">
+                	<div class="imgBox"><img src="images/ico_11_03_03.png"></div>
+                	<div>智能家用榨油机</div>
+                    <div class="button-1"><a href="">查看详情</a></div>
+                </li>
+                <li class="details">
+                	<div class="imgBox"><img src="images/ico_11_03_03.png"></div>
+                	<div>智能家用榨油机</div>
+                    <div class="button-1"><a href="">查看详情</a></div>
+                </li>
+                <li class="details">
+                	<div class="imgBox"><img src="images/ico_11_03_03.png"></div>
+                	<div>智能家用榨油机</div>
+                    <div class="button-1"><a href="">查看详情</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+	<div class="box-3"></div>
+</div>
+<!--底部-->
+<div class="buttom">
+	<ul class="site">
+    	<li><img src="images/ico_10_03.png">北京市朝阳区光华路十五号院铜牛国际大厦二层，100026</li>
+    	<li><img src="images/ico_10_06.png">4006280110</li>
+    	<li><img src="images/ico_10_08.png">servicechina@yatong.com</li>
+    	<li><img src="images/ico_10_10.png">10-85885622</li>
+    	<li><img src="images/ico_10_12.png">www.yatong.com</li>
+    </ul>
+    <ul class="store">
+    	<li>Copyright © 2014 Yatong Corporation.    all rights reserved.</li>
+        <li class="store-1"><a href="">进入亚通商城</a></li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<style>
+*{ margin:0; padding:0; list-style:none; text-decoration:none;}
+img{ border:none;}
+
+#bigbox{ width:100%; border-bottom:1px solid #c2c5c0; height:81px;}
+#top{ width:1200px; margin:0 auto; overflow:inherit;}
+#logo{ float:left;}
+#nav{ float:left; width:800px; margin-left:40px; margin-top:15px;}
+#nav li{ float:left; margin-right:10px;}
+
+.index{ position:relative;}
+#nav_current{ border-bottom:3px solid #47af08;}
+.nav{ border-bottom:3px solid #fff;}
+.index:hover .nav{ border-bottom:3px solid #47af08;}
+.nav{ display:block; font-size:16px; color:#111; font-family:'微软雅黑'; padding:19px 30px; padding-bottom:20px;}
+#nav_two{ position:absolute; display:none; width:122px; z-index:999999;}
+#nav_two a{ display:block; padding:6px; font-size:14px; background-color:#888; color:#fff;}
+#nav_two a:hover{ color:#fff; background-color:#48af07;}
+.index:hover #nav_two{ display:block;}
+
+#banner{ margin:0 auto; z-index:-1; width:1200px;}
+
+#fen{ width:100%; height:5px; background-color:#f1f1f1; margin-top:80px;}
+
+#new{ width:1200px; margin:0 auto; margin-top:20px;}
+#Title{ font-size:20px; color:#41a307; background-image:url(images/1_10.png); background-repeat:no-repeat; background-position:left bottom; padding-bottom:14px; width:1200px; margin:0 auto;}
+#box{ width:1200px; overflow:hidden; margin-bottom:30px;}
+#one{ float:left; width:218px; margin:20px 11px;}
+#one img{ width:218px; height:131px;}
+#one a{ display:block; text-align:center; color:#111; padding:6px; background-color:#d7d7d7;} 
+#one a:hover{ color:#cc0000;}
+
+#huoban{ width:1200px; margin:0 auto;}
+#huoban img{ float:left; margin:12px 16px; padding:4px 8px; border:1px solid #ccc; border-radius:7px;}
+#huoban img:hover{ border:1px solid #44ae0c;}
+
+
+/*介绍*/
+#jieshao{ width:1060px; margin:80px auto; overflow:hidden; height:280px; border-bottom:1px solid #dcdbd7; margin-bottom:10px;}
+#jieshao img{ float:left; margin-top:20px; width:313px;}
+#introduce{ float:left; width:680px; margin-left:20px;}
+#introduce p{ font-size:16px; padding-top:20px; color:#8e8c88; float:left; line-height:22px;}
+#introduce span{ display:block; float:right; margin-top:20px; color:#bf6c2f; font-size:12px;}
+
+/*尾部*/
+#tail_box{ width:100%; background-color:#393939;}
+#tail{ width:840px; margin:0 auto; border-bottom:1px dotted #6a6a6a; overflow:hidden; }
+#right_border{ border-right:1px dotted #717171;}
+.one{ float:left; width:140px; margin-bottom:16px; margin-top:50px; margin-left:44px;}
+.one li{ margin-bottom:20px;}
+.one h3{ font-size:16px; color:#fff;}
+.one a{ color:#ccc; font-size:12px;}
+.one a:hover{ text-decoration:underline;}
+
+.two{ float:left; width:180px; margin-bottom:16px; margin-top:50px; margin-left:44px;}
+.two li{ margin-bottom:20px;}
+.two h3{ font-size:16px; color:#fff;}
+.two a{ color:#ccc; font-size:12px;}
+.two a:hover{ text-decoration:underline;}
+
+#beian{ width:840px; margin:0 auto; color:#fff; font-size:12px; padding:30px 0;}
+
+</style>
+<link href="css/banner.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+</head>
+
+<body>
+
+<div id="bigbox">
+	<div id="top">
+    	<img id="logo" src="images/1_02.png" />
+        <ul id="nav">
+        	<li class="index"><a class="nav" id="nav_current" href="/">首页</a></li>
+            <li class="index"><a class="nav" href="#">全景系统</a>
+            	<dl id="nav_two">
+                	<dd><a href="#">二级菜单</a></dd>
+                    <dd><a href="#">下拉菜单</a></dd>
+                    <dd><a href="#">为了选择更多</a></dd>
+                    <dd><a href="#">导航添加功能</a></dd>
+                </dl>
+            </li>
+            <li class="index"><a class="nav" href="#">软件开发</a>
+            	<dl id="nav_two">
+                	<dd><a href="#">二级菜单</a></dd>
+                    <dd><a href="#">下拉菜单</a></dd>
+                    <dd><a href="#">为了选择更多</a></dd>
+                    <dd><a href="#">导航添加功能</a></dd>
+                </dl>
+            </li>
+            <li class="index"><a class="nav" href="#">微网站</a>
+            	<dl id="nav_two">
+                	<dd><a href="#">二级菜单</a></dd>
+                    <dd><a href="#">下拉菜单</a></dd>
+                    <dd><a href="#">为了选择更多</a></dd>
+                    <dd><a href="#">导航添加功能</a></dd>
+                </dl>
+            </li>
+            <li class="index"><a class="nav" href="#">成功案例</a>
+            	<dl id="nav_two">
+                	<dd><a href="#">二级菜单</a></dd>
+                    <dd><a href="#">下拉菜单</a></dd>
+                    <dd><a href="#">为了选择更多</a></dd>
+                    <dd><a href="#">导航添加功能</a></dd>
+                </dl>
+            </li>
+            <li class="index"><a class="nav" href="#">代理合作</a>
+            	<dl id="nav_two">
+                	<dd><a href="#">二级菜单</a></dd>
+                    <dd><a href="#">下拉菜单</a></dd>
+                    <dd><a href="#">为了选择更多</a></dd>
+                    <dd><a href="#">导航添加功能</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="banner">
+	<div class="index_focus">
+
+	<a href="javascript:;" class="index_focus_pre" title="上一张">上一张</a>
+	<a href="javascript:;" class="index_focus_next" title="下一张">下一张</a>
+	
+	<div class="bd">
+		<ul>
+			<li>
+				<a href="" class="pic">
+					<div class="index_focus_info">
+						<h3>艾莉丝主题酒店</h3>
+						<p class="text">订酒店返现金高达20%；万家酒店团购一折起；
+6千家预付酒店5折起；2千家酒店限时抢低折优惠；
+国际酒店在Expedia优惠价上再打九折</p>
+					</div>
+					<img class="pic" src="images/1.jpeg">
+				</a>
+			</li>
+			<li>
+				<a href="" class="pic">
+					<div class="index_focus_info">
+						<h3>艾莉丝主题酒店</h3>
+						<p class="text">订酒店返现金高达20%；万家酒店团购一折起；
+6千家预付酒店5折起；2千家酒店限时抢低折优惠；
+国际酒店在Expedia优惠价上再打九折</p>
+					</div>
+					<img class="pic" src="images/2.jpeg">
+				</a>
+			</li>
+			<li>
+				<a href="" class="pic">
+					<div class="index_focus_info">
+						<h3>艾莉丝主题酒店</h3>
+						<p class="text">订酒店返现金高达20%；万家酒店团购一折起；
+6千家预付酒店5折起；2千家酒店限时抢低折优惠；
+国际酒店在Expedia优惠价上再打九折</p>
+					</div>
+					<img class="pic" src="images/3.jpeg">
+				</a>
+			</li>
+			<li>
+				<a href="" class="pic">
+					<div class="index_focus_info">
+						<h3>艾莉丝主题酒店</h3>
+						<p class="text">订酒店返现金高达20%；万家酒店团购一折起；
+6千家预付酒店5折起；2千家酒店限时抢低折优惠；
+国际酒店在Expedia优惠价上再打九折</p>
+					</div>
+					<img class="pic" src="images/4.jpeg">
+				</a>
+			</li>
+			<li>
+				<a href="" class="pic">
+					<div class="index_focus_info">
+						<h3>艾莉丝主题酒店</h3>
+						<p class="text">订酒店返现金高达20%；万家酒店团购一折起；
+6千家预付酒店5折起；2千家酒店限时抢低折优惠；
+国际酒店在Expedia优惠价上再打九折</p>
+					</div>
+					<img class="pic" src="images/5.jpeg">
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="slide_nav">
+		<a href="javascript:;">●</a>
+		<a href="javascript:;">●</a>
+		<a href="javascript:;">●</a>
+		<a href="javascript:;">●</a>
+		<a href="javascript:;">●</a>
+	</div>
+	
+</div>
+</div>
+
+
+
+
+<!--介绍-->
+<div id="jieshao">
+	<img src="images/5_33.png">
+    <div id="introduce">
+    	<p>南宁XXX软件科技有限公司 南宁XXX件科技有限公司是一家专业从事于计算机软件开发、Internet/Intranet 服务等方面的高科技IT企业。专业开发企业网站、购物商城系统、OA办公管理系统、连锁经营管理软件、直销会员管理系统。</p>
+        <p>我们拥有强大的开发团队、雄厚的开发实力，强大的服务器资源，我们愿用我们的多年开发经验，不断推出具有自主知识产权和市场竞争力的一流产品和服务。</p>
+        <span>—创达锐公司</span>
+    </div>
+</div>
+
+<div id="new">
+	<h3 id="Title">最新产品</h3>
+  	<div id="box">
+   	  <div id="one">
+        	<img src="images/2_14.png" />
+            <a href="">艾莉丝主题酒店</a>
+        </div>
+        
+        <div id="one">
+        	<img src="images/2_16.png" />
+            <a href="">艾莉丝主题酒店</a>
+        </div>
+        
+        <div id="one">
+        	<img src="images/2_18.png" />
+            <a href="">艾莉丝主题酒店</a>
+        </div>
+        
+        <div id="one">
+        	<img src="images/2_14.png" />
+            <a href="">艾莉丝主题酒店</a>
+        </div>
+        
+        <div id="one">
+        	<img src="images/2_22.png" />
+            <a href="">艾莉丝主题酒店</a>
+        </div>
+        
+      <div id="one">
+        	<img src="images/2_22.png" />
+            <a href="">艾莉丝主题酒店</a>
+        </div>
+        
+      <div id="one">
+        	<img src="images/2_20.png" />
+            <a href="">艾莉丝主题酒店</a>
+        </div>
+        
+      <div id="one">
+        	<img src="images/2_28.png" />
+            <a href="">艾莉丝主题酒店</a>
+        </div>
+        
+      <div id="one">
+        	<img src="images/2_18.png" />
+            <a href="">艾莉丝主题酒店</a>
+        </div>
+        
+      <div id="one">
+        	<img src="images/2_14.png" />
+            <a href="">艾莉丝主题酒店</a>
+        </div>
+        
+        
+	</div>
+</div>
+
+
+<div id="huoban">
+	<h3 id="Title">合作伙伴</h3>
+    <div id="box">
+    	<a href="/"><img src="images/1_14.png" /></a>
+        <a href="/"><img src="images/1_16.png" /></a>
+        <a href="/"><img src="images/1_18.png" /></a>
+        <a href="/"><img src="images/1_20.png" /></a>
+        <a href="/"><img src="images/1_22.png" /></a>
+        <a href="/"><img src="images/1_18.png" /></a>
+        <a href="/"><img src="images/1_24.png" /></a>
+        <a href="/"><img src="images/1_14.png" /></a>
+    </div>
+</div>
+
+
+<!--底部-->
+<div id="tail_box">
+	<div id="tail">
+    	<ul class="one" id="right_border">
+        	<li><h3>网站导航</h3></li>
+            <li><a href="/">新闻动态</a></li>
+            <li><a href="/">案例展示</a></li>
+            <li><a href="/">软件开发</a></li>
+            <li><a href="/">微网站</a></li>
+        </ul>
+        <ul class="one" id="right_border">
+        	<li><h3>全景系统</h3></li>
+            <li><a href="/">全景/ipad售楼系统</a></li>
+            <li><a href="/">全景酒店看房系统</a></li>
+            <li><a href="/">全景虚拟旅游系统</a></li>
+            <li><a href="/">全景房屋装修系统</a></li>
+        </ul>
+        <ul class="one" id="right_border">
+        	<li><h3>关于创达锐</h3></li>
+            <li><a href="/">新闻动态</a></li>
+            <li><a href="/">联系我们</a></li>
+            <li><a href="/">在线地图</a></li>
+            <li><a href="/">隐私说明</a></li>
+        </ul>
+        <ul class="two">
+        	<li><h3>联系我们</h3></li>
+            <li><a href="/">联系人：安生</a></li>
+            <li><a href="/">免费电话：18977771077</a></li>
+            <li><a href="/">18977771077</a></li>
+            <li><a href="/">18977771077</a></li>
+        </ul>
+    </div>
+    
+    <p id="beian">备案信息：此处记录公司备案号等信息此处记录公司备案号等信息</p>
+    
+</div>
+
+
+</body>
+</html>

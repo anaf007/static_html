@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ background-image:url(../images/1_10.png)}
+body,p,ul,li,a,span,dd,dr,h5,h3{ list-style:none; margin:0; padding:0; text-decoration:none;}
+img{ border:none;}
+#topBox{ width:1280px; margin:0 auto; overflow:hidden; margin-top:10px;}
+#topBox ul{ width:440px; float:right;}
+#topBox li{ float:left; color:#bbbbbc; margin-right:10px; font-size:12px;}
+#topBox p{ padding-top:6px;}
+#topBox p:hover{ color:#fff;}
+
+/*导航*/
+#navBox{ background-image:url(../images/2_16.png); height:87px; width:1280px; margin:0 auto; margin-top:10px; overflow:inherit;}
+#logo{ float:left; margin:12px 30px;}
+.nav{ float:right; width:720px; margin-top:20px;}
+.nav li:hover{ background-image:url(../images/2_21.png);}
+.nav b{ float:left; padding-top:20px;}
+.nav li{ float:left; width:97px; text-align:center; padding-top:20px; color:#333; cursor:pointer;}
+.nav p{ font-size:14px;}
+.nav span{ font-size:12px; color:#78650d;}
+.nav li:hover{ color:#fff;}
+
+/*二级导航*/
+#tow_nav{ color:#FFF;}
+#tow_nav h5{ padding:4px 0; font-weight:normal; font-size:12px; margin:4px 0;}
+#tow_nav dd:hover{ color:#0195d3; background-color:#FFF; }
+
+
+/*单一样式*/
+.white{ color:#fff; font-size:18px;}
+#wiite{ color:#fff;}
+
+/*banner轮播*/
+.banner_box{ width:100%; height:369px; margin:0 auto; overflow:hidden; position:absolute; left:50%; margin-left:-640px; top:136px; z-index:-1;}
+.banner{ width:1280px; margin:0 auto; height:369px; position:absolute; overflow:hidden;}
+.img_box{ position:absolute; width:3840px; height:369px; overflow:hidden;}
+.img_box img{ float:left;}
+
+/*button*/
+.button{ z-index:9999; overflow:hidden; width:200px; position:absolute; left:600px; bottom:30px;}
+.button li{ float:left; background-image:url(../images/3_03.png); margin-right:14px; width:16px; height:16px;}
+.button_hover{ background-image:url(../images/3_05.png);}
+
+/*01*/
+#ad_1{ background-image:url(../images/5_03.png); width:1280px; height:117px; margin:0 auto; margin-top:369px;}
+#ad_box{ overflow:hidden; margin-left:350px; padding-top:10px;}
+#ad{ float:left; margin-right:50px;}
+#ad p{ text-align:center; font-size:12px; color:#ff0000; margin:6px 0;}
+#ad span{  font-size:12px; color:#999999; text-align:center; display:block;}
+
+
+/*ad大框架*/
+#ad_id{ width:1280px; background-color:#efefef; margin:0 auto; overflow:hidden;}
+#ad_2{ float:left; margin-left:140px; margin-top:12px; padding-bottom:30px;}
+#neirong img{ width:267px; height:245px;}
+
+#ad_3{ margin:13px; float:left;}
+#one{ width:437px; overflow:hidden; margin-top:4px; border-bottom:1px dashed #ccc; padding-bottom:10px;}
+#back{ float:left; background-image:url(../images/4_27.png); width:70px; margin-top:6px; height:40px;}
+#back h3{ font-size:18px; text-align:center; padding-right:6px; color:#FFF;}
+#back P{ text-align:center; padding-right:6px; color:#FFF;}
+#wenzi{ float:left; margin-top:8px; margin-left:4px;}
+#wenzi p{ font-size:14px; color:#454545; padding-bottom:4px;}
+#wenzi span{ font-size:13px; color:#999999;}
+#wenzi p:hover,#wenzi span:hover{ color:#cc0000; text-decoration:underline;}
+
+/*图文介绍*/
+#ad_4{ width:300px; float:left; height:300px; margin-top:13px; overflow:hidden;}
+#list{ cursor:pointer; width:132px; margin-right:10px; margin-bottom:10px; height:143px; float:left; background-color:#090; position:relative;}
+#list img{ width:132px; height:143px;}
+
+#txt{ width:132px; height:143px; position:absolute; background-image:url(../images/7_05.png);  top:116px;;}
+#txt h3{ text-align:center; font-weight:bold; font-size:12px; padding-top:6px; padding-bottom:14px; color:#333;}
+#txt p{ width:110px; margin:0 auto; display:block; font-size:12px; color:#666; line-height:20px;}
+
+/*尾部信息*/
+#tail_box{ width:1280px; height:190px; background-image:url(../images/8_10.png); margin:0 auto; margin-bottom:30px; overflow:hidden;}
+#tail_1{ float:left; margin-top:24px; margin-left:340px;}
+#tail_1 p{ font-size:18px; font-weight:bold; color:#fff;}
+#tail_1 span{ font-size:18px; font-weight:bold; color:#999999; padding-top:20px; display:block;}
+#QQ{ margin-top:10px;}
+
+#tail_2{ margin-top:24px; margin-left:200px; float:left;}
+#tail_2 p{ font-size:18px; color:#999999; padding:10px 0;}

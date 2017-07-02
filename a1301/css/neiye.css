@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 内页banner css */
+.ny_banner1{width:100%; height:242px; position:relative; /*background:url(../images/banner_bg1.gif) repeat-x;*/  margin-bottom:20px;}
+.ny_banner2{width:100%; height:127px; position:relative;background:url("../images/banner_bg2.gif") repeat-x;margin-bottom:20px;}
+
+/* 内页主体 css */
+.ny_con_bg{float:left; width:980px; background:url("../images/ny_bg.gif") repeat-y;}
+.ny_con{float:left; width:940px; padding:20px 20px 20px 20px; background:url("../images/ny_bgtop.gif") no-repeat left top;}
+.ny_con2{float:left; width:953px; padding:20px 7px 20px 20px; background:url("../images/ny_bgtop.gif") no-repeat left top;}
+.ny_con_di{float:left; height:13px;}
+
+.tt{height:38px; line-height:30px;}
+.tt h2{float:left; padding:0 5px; font-size:16px; font-family:"微软雅黑"; color:#18516D;}
+.tt .ny_yw{float:left; color:#999; font-family:Arial; font-size:13px; font-style:italic; padding-top:7px; line-height:19px; font-weight:bold;}
+
+/* 内页关于我们 css */
+.zheng{float:left; width:295px;}
+.zheng_nr_bg{float:left; width:295px; padding-top:16px; background:url("../images/zheng_top.gif") no-repeat left top;}
+.zheng_nr{float:left; width:240px; padding:0 28px 30px 27px; background:url("../images/zheng_bott.gif") no-repeat left bottom;}
+.zheng_nr ul li{float:left; padding-top:13px;}
+.gywm{float:left; padding-left:25px; width:620px;}
+.gywm_t{float:left; height:43px; width:620px; line-height:35px; text-align:center; background:url("../images/ny_line2.gif") no-repeat left bottom;}
+.gywm_t h1{font-size:16px; color:#000;}
+.gywm_nr{float:left; width:620px; line-height:23px; padding-top:10px;}
+
+/* 内页联系我们 css */
+.lxfs{float:left; width:940px;}
+.lxfs_nr{float:left; width:940px;}
+.lxfs_fs{float:left; width:310px; height:206px; font-size:14px; padding:35px 0 0 20px; line-height:30px; color:#555; font-family:"宋体"; background:url("../images/lxfs_bg.gif") no-repeat left top;}
+.lxfs_tu{float:left; }
+
+/* 内页最新动态 css */
+.zxdt{float:left; width:700px;}
+.zxdt ul li{float:left; width:700px; padding:20px 0 0 0;}
+.zxdt ul li .zxdt_t{float:left; font-size:14px; font-weight:bold; width:682px; padding-left:18px; height:26px; line-height:23px; background:url("../images/row2.gif") no-repeat 3px 7px;}
+.zxdt ul li .zxdt_t span{float:right; color:#75A3BA; font-size:12px; font-weight:normal;}
+.zxdt ul li .zxdt_t a{color:#000; text-decoration:none;}
+.zxdt ul li .zxdt_t a:hover{color:#046590; text-decoration:underline;}
+.zxdt ul li .zxdt_nr{float:left; width:700px; padding-top:8px; line-height:23px; color:#777; background:url("../images/line2.gif") repeat-x 0 0;}
+.zxdt_r{float:right; width:200px; height:835px; padding:20px 10px 0 20px; background:url("../images/zxdt_bg.gif") no-repeat;}
+.zxdt_r ul li{float:left; width:200px; text-align:center; font-weight:bold; font-size:14px;}
+.zxdt_r ul li a{display:block;width:200px; height:32px; line-height:32px; text-decoration:none; background:url("../images/zxdt_link.gif") no-repeat;}
+.zxdt_r ul li a.cur3{background:url("../images/zxdt_cur.gif") no-repeat; color:#238BB8;}
+.zxdt_r ul li a:hover, .zxdt_r ul li a.cur3:hover{background:url("../images/zxdt_cur.gif") no-repeat; color:#238BB8;}
+
+/* 内页最新动态内容 css */
+.zxdt h1{float:left; width:700px; text-align:center; padding:30px 0px 20px 0px; height:30px; line-height:30px; color:#000;}
+.zxdt_sj{float:left; width:690px; height:25px; padding:0 5px; line-height:25px; color:#8D8D8D; background:url("../images/line2.gif") repeat-x 0 100%;}
+.zxdt_sj span{float:right;}
+.zxdt_info{float:left; width:695px; padding:10px 0 0 5px; line-height:23px;}
+
+/* 服务项目 css */
+.fwxm{float:left; width:456px; height:155px; padding:30px 18px 15px 15px; background:url("../images/fuwu_bg.gif") no-repeat;}
+.fwxm_tu{float:left; width:205px; height:123px; background:url("../images/fuwu_tudi.gif") no-repeat left bottom;}
+.fwxm_text{float:left; padding-left:11px; width:240px; line-height:20px;}
+
+/* 软件下载 css */
+.rjxz{float:left; width:940px;}
+.rjxz ul li{float:left; width:233px; padding-right:2px; height:243px; background:url("../images/line3.gif") no-repeat right top;}
+.rjxz ul li .rjxz_tu{float:left; width:233px; height:169px; text-align:center;}
+.rjxz ul li .rjxz_niu{float:left; width:233px; text-align:center;}
+
+.rjxz_xh{float:left; width:460px;}
+.rjxz_xh ul li{float:left; padding-top:30px; line-height:39px;}
+.rjxz_xh ul li .xh_mc{float:left; padding-left:8px; width:82px; font-size:14px; color:#000; font-weight:bold;}
+.rjxz_xh ul li .xh_in{float:left; width:290px; font-size:14px; color:#5F5F5F;}
+.rjxz_rmxh{float:left; width:460px; font-size:14px; padding-top:35px; line-height:30px; color:#000; font-family:"宋体";}
+
+.rjxz_dx{float:left; width:460px; padding-top:10px;}
+.rjxz_dx ul li{ line-height:32px; color:#000; font-size:14px;}
+.rjxz_ewm{float:left; width:480px; padding-top:35px; line-height:30px; color:#000; font-family:"宋体";}
+.rjxz_ewm_tu{ color:#000; line-height:25px;font-size:14px;float:left; width:480px;}
+.rjxz_ewm_zi{ padding-top:20px; color:#6E6E6E; float:left; width:480px;}
+
+/*CSS manu style pagination*/
+.manu {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 3px; PADDING-TOP: 3px; TEXT-ALIGN: center
+}
+.manu A {
+	BORDER-RIGHT: #C8C6C6 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #C8C6C6 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #C8C6C6 1px solid; COLOR: #036cb4; PADDING-TOP: 2px; BORDER-BOTTOM: #C8C6C6 1px solid; TEXT-DECORATION: none
+}
+.manu A:hover {
+	BORDER-RIGHT: #999 1px solid; BORDER-TOP: #999 1px solid; BORDER-LEFT: #999 1px solid; COLOR: #666; BORDER-BOTTOM: #999 1px solid
+}
+.manu A:active {
+	BORDER-RIGHT: #999 1px solid; BORDER-TOP: #999 1px solid; BORDER-LEFT: #999 1px solid; COLOR: #666; BORDER-BOTTOM: #999 1px solid
+}
+.manu .current {
+	BORDER-RIGHT: #036cb4 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #036cb4 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #036cb4 1px solid; COLOR: #fff; PADDING-TOP: 2px; BORDER-BOTTOM: #036cb4 1px solid; BACKGROUND-COLOR: #036cb4
+}
+.manu .disabled {
+	BORDER-RIGHT: #C8C6C6 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #C8C6C6 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #C8C6C6 1px solid; COLOR: #C8C6C6; PADDING-TOP: 2px; BORDER-BOTTOM: #C8C6C6 1px solid
+}

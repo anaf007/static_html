@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>200元建站</title>
+<style>
+*{ margin:0; padding:0; list-style:none; text-decoration:none;}
+img{ border:none;}
+
+body{ background-image:url(images/body_01.png); background-repeat:no-repeat; background-position:top center;}
+
+#top_box{ width:1585px; margin:0 auto; background-color:#2e2e2e; margin-top:58px; height:40px;}
+#top{ width:1000px; margin:0 auto; height:40px; position:relative; overflow:inherit;}
+#logo{ position:absolute; top:-58px; left:0;}
+#nav{ margin-left:247px; overflow:hidden;}
+.index{ float:left;}
+.nav{ color:#fff; display:block; padding:10px 48px; font-size:14px; font-family:'微软雅黑';}
+.index:hover .nav{ background-color:#e61c32;}
+#two{ display:none;}
+#two dd{ background-color:#2e2e2e;}
+#two a{ font-size:12px; color:#fff; display:block; text-align:center; padding:4px 0;}
+#two a:hover{ background-color:#e61c32;}
+.index:hover #two{ display:block;}
+
+
+#show_box{ width:1000px; margin:0 auto; margin-top:430px; position:relative;}
+#show_title{ background-color:#e61c32; color:#fff; font-size:14px; font-family:'微软雅黑'; width:148px; position:absolute; top:-30px;}
+#show_title p{ text-align:center; padding:14px 0;}
+.show{ width:640px; margin:0 auto; overflow:hidden; padding-top:60px;}
+.show_img{ width:320px; height:200px; float:left;} 
+.show_img img{ width:320px; height:200px;}
+
+.show_txt{ width:320px; float:left;}
+.show_txt h3{ padding-top:36px; padding-left:12px; padding-bottom:20px; font-size:16px; color:#2e2e2e; }
+.show_txt p{ font-size:12px; padding-left:12px; line-height:20px; color:#2e2e2e;}
+.show_txt a{ display:block; background-color:#2db1f1; color:#fff; width:160px; text-align:center; padding:10px 0; font-size:12px; margin:12px;}
+.show_txt a:hover{ background-color:#0b75a8;}
+
+.btn_left{ position:absolute; width:16px; height:30px; top:50%; left:50px; margin-top:-15px; background-image:url(images/btn_07.png); background-repeat:no-repeat; background-position:left top; cursor:pointer;} 
+.btn_right{ position:absolute; width:16px; height:30px; top:50%; right:50px; margin-top:-15px; background-image:url(images/btn_07.png); background-repeat:no-repeat; background-position:right top; cursor:pointer;}
+
+.show{ display:none;}
+
+
+#tail{ width:1585px; background-color:#e61c32; margin:0 auto; margin-top:40px; }
+#tail p{  text-align:center; color:#fff; font-size:14px; padding:4px 0;}
+
+@media (max-width:1300px){
+	#top_box{ width:1000px;}
+	#tail{ width:1000px; margin:0 auto;}
+}
+</style>
+<script src="js/jQuery.js"></script>
+<script>
+$(function(){
+	$(".show").eq(0).show()
+	var n=0;
+	$(".btn_right").click(function(){
+		if(n<$(".show").length-1)
+		{
+			n+=1;
+			$(".show").hide()
+			$(".show").eq(n).fadeIn(444)	
+		}
+		else
+		{
+			n=0;	
+			$(".show").hide()
+			$(".show").eq(n).fadeIn(444)
+		}
+	})
+	
+	$(".btn_left").click(function(){
+		if(n>0)
+		{
+			n-=1;
+			$(".show").hide()
+			$(".show").eq(n).fadeIn(444)
+		}
+		else
+		{
+			n=$(".show").length-1;
+			$(".show").hide()
+			$(".show").eq(n).fadeIn(444)
+		}
+	})
+})
+</script>
+</head>
+
+<body>
+
+<div id="top_box">
+	<div id="top">
+    	<div id="logo">
+        	<img src="images/logo_03.png" />
+        </div>
+        <ul id="nav">
+        	<li class="index"><a class="nav" href="">首页</a></li>
+            <li class="index"><a class="nav" href="body.html">网站建设</a>
+            	<dl id="two">
+                </dl>
+            </li>
+            <li class="index"><a class="nav" href="#">公司产品</a>
+            	<dl id="two">
+                </dl>
+            </li>
+            <li class="index"><a class="nav" href="">公司介绍</a>
+            	<dl id="two">
+                </dl>
+            </li>
+            <li class="index"><a class="nav" href="content.html">联系方式</a>
+            	<dl id="two">
+                </dl>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<div id="show_box">
+	<div id="show_title">
+    	<p>网页设计作品展示</p>
+    </div>
+
+
+    
+    <div class="show">
+    	<div class="show_img">
+        	<img src="images/show_04.png" />
+        </div>
+        <div class="show_txt">
+        	<h3>CASE NO:111</h3>
+            <p>世纪名威家具网站，负责网站界面和程序整合制作</p>
+            <a href="">点击查看所有全部作品</a>
+        </div>
+    </div>
+ 
+ 
+    
+    <div class="show">
+    	<div class="show_img">
+        	<img src="images/show_04.png" />
+        </div>
+        <div class="show_txt">
+        	<h3>CASE NO:222</h3>
+            <p>世纪名威家具网站，负责网站界面和程序整合制作</p>
+            <a href="">点击查看所有全部作品</a>
+        </div>
+    </div>
+
+
+    
+    <div class="show">
+    	<div class="show_img">
+        	<img src="images/show_04.png" />
+        </div>
+        <div class="show_txt">
+        	<h3>CASE NO:333</h3>
+            <p>世纪名威家具网站，负责网站界面和程序整合制作</p>
+            <a href="">点击查看所有全部作品</a>
+        </div>
+    </div>
+
+    
+    
+    <div class="show">
+    	<div class="show_img">
+        	<img src="images/show_04.png" />
+        </div>
+        <div class="show_txt">
+        	<h3>CASE NO:444</h3>
+            <p>世纪名威家具网站，负责网站界面和程序整合制作</p>
+            <a href="">点击查看所有全部作品</a>
+        </div>
+    </div>
+    
+    <a class="btn_left"></a>
+    <a class="btn_right"></a>
+</div>
+
+
+<div id="tail">
+	<p>版权所有：xx公司</p>
+    <p>备案号：GX-45665445</p>
+</div>
+
+<script>
+$(function(){
+	var n = 0;
+	function imgChange(){
+		if(n<$(".show").length-1){
+			n=n+1;
+			}else{
+			n=0;	
+		}
+			 
+		$(".show").hide();
+		$(".show:eq("+n+")").fadeIn(555);
+		}
+	
+	var clock = setInterval(imgChange,3000);
+	$("#show_box").mouseover(function(){
+		clearInterval(clock);
+			}).mouseout(function(){
+			clock=setInterval(imgChange,3000)	
+	})
+})
+</script>
+
+</body>
+</html>
